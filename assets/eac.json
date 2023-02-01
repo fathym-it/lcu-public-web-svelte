@@ -1,0 +1,58 @@
+{
+  "Applications": {
+    "$1": {
+      "Application": {
+        "Description": "A basic starting point for sites built with Svelte.",
+        "Name": "Svelte Quickstart Project - Forked Recipe"
+      },
+      "LookupConfig": {
+        "PathRegex": "/.*"
+      },
+      "LowCodeUnit": {
+        "Package": "fork|github://fathym-it/public-web-svelte",
+        "Version": "latest",
+        "Type": "GitHub"
+      },
+      "Processor": {
+        "BaseHref": "/",
+        "DefaultFile": "index.html",
+        "Type": "DFS"
+      }
+    }
+  },
+  "Environments": {
+    "$#.PrimaryEnvironment": {
+      "Artifacts": {
+        "svelte-build-release": {
+          "Name": "Svelte Build/Release",
+          "Output": "./public",
+          "Type": "GitHub",
+          "BuildCommand": "npm run build",
+          "InstallCommand": "npm ci",
+          "NPMRegistry": "https://registry.npmjs.org/"
+        }
+      },
+      "DevOpsActions": {
+        "github-artifacts-release-gatsby": {
+          "Name": "GitHub Artifacts - Release - Svelte",
+          "Path": "lcu-github-artifacts-release.yml",
+          "ArtifactLookups": ["svelte-build-release"],
+          "Templates": [
+            "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/artifacts/_header.hbs.yml",
+            "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/artifacts/release-flow.yml"
+          ]
+        }
+      },
+      "Sources": {
+        "fork|github://fathym-it/public-web-svelte": {
+          "DevOpsActionTriggerLookups": ["github-artifacts-release-svelte"],
+          "Branches": ["main"],
+          "MainBranch": "main",
+          "Organization": "fathym-it",
+          "Repository": "public-web-svelte",
+          "Type": "GitHub"
+        }
+      }
+    }
+  }
+}
