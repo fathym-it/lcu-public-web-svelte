@@ -9,8 +9,9 @@
         "PathRegex": "/.*"
       },
       "LowCodeUnit": {
-        "Package": "fork|github://fathym-it/public-web-svelte",
+        "SourceControlLookup": "fork|github://fathym-it/public-web-svelte",
         "Version": "latest",
+        "Path": "lcu-github-artifacts-release.yml",
         "Type": "GitHub"
       },
       "Processor": {
@@ -50,6 +51,7 @@
           "MainBranch": "main",
           "Organization": "fathym-it",
           "Repository": "public-web-svelte",
+          "Name": "github://fathym-it/public-web-svelte",
           "Type": "GitHub"
         }
       }
