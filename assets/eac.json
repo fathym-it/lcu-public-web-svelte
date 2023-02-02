@@ -10,7 +10,7 @@
       },
       "LowCodeUnit": {
         "SourceControlLookup": "fork|github://fathym-it/public-web-svelte",
-        "Version": "latest",
+        "Build": "latest",
         "Path": "lcu-github-artifacts-release.yml",
         "Type": "GitHub"
       },
