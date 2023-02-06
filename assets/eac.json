@@ -34,7 +34,7 @@
         }
       },
       "DevOpsActions": {
-        "github-artifacts-release-gatsby": {
+        "github-artifacts-release-svelte": {
           "Name": "GitHub Artifacts - Release - Svelte",
           "Path": "lcu-github-artifacts-release.yml",
           "ArtifactLookups": ["svelte-build-release"],
