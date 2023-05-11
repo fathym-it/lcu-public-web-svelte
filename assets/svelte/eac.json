@@ -59,7 +59,7 @@
             "Branches": ["main"],
             "MainBranch": "main",
             "Organization": "{{ORGANIZATION}}",
-            "Repository": "public-web-gatsby",
+            "Repository": "public-web-svelte",
             "Name": "github://{{ORGANIZATION}}/public-web-svelte"
           },
           "Type": "GitHubSourceControl"
