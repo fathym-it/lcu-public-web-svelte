@@ -3,7 +3,7 @@
     "{{$1}}-public-web-svelte": {
       "Details": {
         "Description": "A basic starting point for sites built with Svelte.",
-        "Name": "Svelte Quickstart Project - Forked Recipe"
+        "Name": "Svelte - Headless Websites - Forked Recipe"
       },
       "LookupConfig": {
         "PathRegex": "/.*"
