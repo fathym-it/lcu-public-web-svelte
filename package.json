@@ -1,6 +1,6 @@
 {
   "name": "@fathym-it/lcu-public-web-svelte",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "@fathym-it/lcu-public-web-svelte",
   "author": "Fathym, Inc",
   "main": "lcu.json",

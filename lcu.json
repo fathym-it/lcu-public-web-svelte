@@ -1,7 +1,7 @@
 {
   "Package": {
-    "Name": "Svelte - Headless Websites - Forked Recipe",
-    "Description": "A customizable starter to quickly deploy a Svelte app to Fathym.",
+    "Name": "Svelte Starter - GitHub Fork",
+    "Description": "A Svelte starter app deployed to Fathym via a repository forked to your GitHub.",
     "Image": "https://www.fathym.com/img/svelte.png",
     "PreviewImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png",
     "Intents": [
@@ -13,11 +13,11 @@
   },
   "Configurations": {
     "Full": {
-      "Name": "Svelte Quickstart",
-      "Description": "Svelte Quickstart",
+      "Name": "Svelte Starter - GitHub Fork",
+      "Description": "A Svelte starter app deployed to Fathym via a repository forked to your GitHub.",
       "Phases": [
         {
-          "Name": "Setup Svelte",
+          "Name": "Setting Up Svelte Project",
           "Order": 1,
           "Asset": "svelte"
         }
